@@ -13,3 +13,107 @@
   font-display: swap;
   src: url(../fonts/ptsans-700.woff2) format("woff2");
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+
+  width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* Header */
+
+.main-header {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.navigation-list {
+  list-style: none;
+}
+
+.navigation-link {
+  color: #000;
+}
+
+.navigation-user {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+
+/* main */
+
+/* section .welcome */
+
+.welcome {
+  background-color:tomato;
+  background-image: url(../images/index-hero-background.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  position: relative;
+
+  margin-bottom: 69px;
+
+}
+
+
+.welcome::after {
+  content: url(../images/divider.svg);
+  /* background: url(../images/divider.svg); */
+  position: absolute;
+  bottom: -5px;
+}
+
+.hero-img {
+  display: block;
+  margin: 0 auto;
+  padding-top: 51px;
+  padding-bottom: 82px;
+}
+
+/* section .advantages */
+
+.advantages p:nth-of-type(1) {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+
+  margin-bottom: 25px;
+}
+
+.advantages p:nth-of-type(2) {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333;
+
+  margin-bottom: 90px;
+}
+
+.advantages-list {
+  list-style: none;
+}
