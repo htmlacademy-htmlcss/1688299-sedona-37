@@ -249,6 +249,10 @@ body {
 
 /* section .mailing */
 
+.mailing {
+  margin-bottom: 45px;
+}
+
 .mailing-index {
   background-color: tomato;
   background-image: url(../images/mailing-background.jpg);
@@ -256,8 +260,6 @@ body {
   background-size: cover;
 
   color: #fff;
-
-  margin-bottom: 45px
 }
 
 .mailing-first-p {
