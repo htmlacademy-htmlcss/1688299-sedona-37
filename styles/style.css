@@ -80,10 +80,25 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+
+  display: flex;
+}
+
+.main-logo-link {
+  margin-left: 70px;
+}
+
+.navigation {
+  display: flex;
 }
 
 .navigation-list {
   list-style: none;
+
+  margin-left: 26px;
+  padding: 0;
+
+  display: flex;
 }
 
 .navigation-link {
@@ -91,15 +106,23 @@ body {
   text-decoration: none;
 }
 
-.navigation-user {
+.navigation-user-list  {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+
+  list-style: none;
+
+  padding: 0;
+
+  display: flex;
 }
 
-.navigation-user:last-child a {
+.navigation-link-button {
   color: #fff;
+
+  width: 160px;
 }
 
 /* main (index)*/
