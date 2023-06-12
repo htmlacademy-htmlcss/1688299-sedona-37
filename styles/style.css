@@ -48,11 +48,19 @@ body {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
 .button {
   cursor: pointer;
 
   text-decoration: none;
 
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -67,11 +75,7 @@ body {
   border: 0;
   border-radius: 4px;
 
-  padding: 0;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 8px 50px;
 }
 
 /* Header */
@@ -157,6 +161,7 @@ body {
   padding-top: 51px;
   padding-bottom: 82px;
   display: block;
+  vertical-align: middle;
   margin: 0 auto;
 }
 
@@ -187,26 +192,66 @@ body {
 
 .advantages-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages-list-item {
+  min-width: 400px;
+  min-height: 385px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .advantages-list-item h3 {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  text-transform: uppercase;
+
+  width: 175px;
+  margin: 0 auto 30px auto;
 }
 
-.advantages-list-item img {
-  display: block;
+.line {
+  width: 60px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 0 auto 30px auto;
 }
 
-.advantages-list-item p {
+.advantages-list li:first-child .line,
+.advantages-list li:last-child .line {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.advantages-list-item-text {
   font-size: 18px;
   line-height: 21px;
   color: #333;
+  width: 232px;
+  margin: 0 auto;
 }
 
-.advantages-list li:first-child, .advantages-list li:last-child {
-  color: rgb(165, 15, 15);
+.white-text {
+  color: #fff;
+}
+
+.advantages-list li:nth-child(even) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-list li:nth-child(odd) {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-list li:first-child,
+.advantages-list li:last-child {
+  background-color: #82b3d3;
 }
 
 /* section .recomendations */
@@ -231,6 +276,7 @@ body {
 
 .recomendations-list {
   list-style: none;
+  padding: 0;
 }
 
 .recomendations-list-item h3 {
@@ -371,6 +417,7 @@ input[type="email"]::placeholder {
 
 .breadcrumbs {
   list-style: none;
+  padding: 0;
 }
 
 .hotel-filter-group {
@@ -381,6 +428,7 @@ input[type="email"]::placeholder {
 
 .hotel-filter-list {
   list-style: none;
+  padding: 0;
 }
 
 .search-hotel-button {
@@ -413,6 +461,7 @@ input[type="email"]::placeholder {
 
 .view-type-list {
   list-style: none;
+  padding: 0;
 }
 
 .view-type-item {
@@ -439,6 +488,7 @@ input[type="email"]::placeholder {
 
 .hotel-list {
   list-style: none;
+  padding: 0;
 }
 
 .hotel-card-title {
@@ -482,6 +532,7 @@ input[type="email"]::placeholder {
 
 .pagination-list {
   list-style: none;
+  padding: 0;
   display: flex;
 }
 
@@ -540,7 +591,7 @@ input[type="email"]::placeholder {
 
 .social-list {
   list-style: none;
-  margin: 0;
+  padding: 0;
   display: flex;
 }
 
