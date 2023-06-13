@@ -59,7 +59,7 @@ img {
 
   text-decoration: none;
 
-  font-family: "PT Sans", sans-serif;
+  font-family: inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -213,13 +213,17 @@ img {
   justify-content: center;
 }
 
+.advantages-list-item-wrapper {
+  min-width: 400px;
+}
+
 .advantages-list-item h3 {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
 
-  width: 175px;
+  max-width: 175px;
   margin: 0 auto 30px auto;
 }
 
@@ -239,12 +243,16 @@ img {
   font-size: 18px;
   line-height: 21px;
   color: #333;
-  width: 232px;
+  max-width: 232px;
   margin: 0 auto;
 }
 
 .white-text {
   color: #fff;
+}
+
+.advantages-list-item-img {
+  text-align: right;
 }
 
 .advantages-list li:nth-child(even) {
@@ -258,6 +266,11 @@ img {
 .advantages-list li:first-child,
 .advantages-list li:last-child {
   background-color: #82b3d3;
+
+}
+
+.advantages-list li:last-child {
+  flex-direction: row-reverse;
 }
 
 /* section .recomendations */
@@ -272,17 +285,38 @@ img {
   line-height: 36px;
   text-transform: uppercase;
 
-  width: 505px;
+  max-width: 505px;
   margin: 0 auto 20px auto;
 }
 
 .recomendations-second-p {
   color: #333;
+  margin-bottom: 64px;
 }
 
 .recomendations-list {
   list-style: none;
   padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.recomendations-list-item {
+  min-width: 400px;
+  min-height: 385px;
+}
+
+.recomendations-list-item:nth-child(odd) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.recomendations-list-item-wrapper {
+  padding-top: 81px;
+}
+
+.recomendations-list-item-img {
+  display: block;
+  margin: 0 auto 30px auto;
 }
 
 .recomendations-list-item h3 {
@@ -290,12 +324,17 @@ img {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+
+  margin: 0 auto 30px auto;
 }
 
 .recomendations-list-item p {
   font-size: 18px;
   line-height: 21px;
   color: #333;
+  max-width: 230px;
+
+  margin: 0 auto 30px auto;
 }
 
 /* section .search-hotel */
