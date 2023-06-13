@@ -65,17 +65,23 @@ img {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
   color: #fff;
 
   background-color: #756157;
 
-  width: 140px;
-  height: 36px;
+  display: block;
+
+
+  max-width: 140px;
+
+
+  box-sizing: border-box;
 
   border: 0;
   border-radius: 4px;
 
-  padding: 8px 50px;
+  padding: 8px 26px;
 }
 
 /* Header */
@@ -128,8 +134,8 @@ img {
 
 .navigation-link-button {
   color: #fff;
-
-  width: 160px;
+  padding: 8px 34px;
+  max-width: 160px;
 }
 
 /* main (index)*/
@@ -160,7 +166,7 @@ img {
 .hero-img {
   padding-top: 51px;
   padding-bottom: 82px;
-  display: block;
+  display: inline-block;
   vertical-align: middle;
   margin: 0 auto;
 }
@@ -311,8 +317,8 @@ img {
 }
 
 .search-button {
-  width: 376px;
-  height: 52px;
+  max-width: 376px;
+  padding: 8px 50px;
   margin: 0 auto 104px auto;
 
   font-size: 20px;
@@ -378,12 +384,10 @@ input[type="email"]::placeholder {
 }
 
 .mailing-button {
-  display: flex;
-  width: 232px;
-  height: 52px;
+  max-width: 232px;
+  padding: 8px 50px;
 
   border-radius: 0 4px 4px 0;
-
   background-color: #82b3d3;
 
   font-size: 20px;
@@ -506,10 +510,12 @@ input[type="email"]::placeholder {
 
 .add-to-favorites {
   background-color: #82b3d3;
+  padding: 8px 20px;
 }
 
 .added-to-favorites {
   background-color: #7db54f;
+  padding: 8px 18px;
 }
 
 .rating {
@@ -520,12 +526,14 @@ input[type="email"]::placeholder {
 
   background-color: #f2f2f2;
 
-  width: 140px;
-  height: 37px;
+  max-width: 140px;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 9px 22px 8px 23px;
+
+  border-radius: 4px;
+
+  display: block;
+  box-sizing: border-box;
 }
 
 
