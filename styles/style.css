@@ -48,12 +48,6 @@ body {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-
 .button {
   cursor: pointer;
 
@@ -625,21 +619,37 @@ input[type="email"]::placeholder {
 
 /* footer */
 
+.main-footer {
+  padding-bottom: 35px;
+}
+
+.main-footer img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .contacts {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-bottom: 35px;
 }
 
 .social {
   width: 142px;
   margin-left: 70px;
+  display: flex;
+  align-items: center;
 }
 
 .social-list {
   list-style: none;
   padding: 0;
+  margin: 0;
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-grow: 1;
 }
 
 .phone {
