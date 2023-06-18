@@ -761,7 +761,7 @@ input[type="email"]::placeholder {
   url(../images/rating-star.svg),
   url(../images/rating-star.svg);
   background-repeat: no-repeat;
-  background-position: 0 0, 24px 0, 48px 0, 72px 0;
+  background-position: 0 0, 24px 0, 48px 0, 72px 0  ;
 }
 
 .rating {
