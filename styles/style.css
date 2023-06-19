@@ -481,7 +481,7 @@ main {
   justify-content: center;
 }
 
-input[type="email"] {
+.mailing-list input[type="email"] {
   display: flex;
   width: 452px;
   height: 52px;
@@ -489,7 +489,8 @@ input[type="email"] {
   border-radius: 4px 0 0 4px;
   border: 0;
 
-  padding: 0 0 0 20px;
+  padding: 0 20px 0 20px;
+  box-sizing: border-box;
 
   background-color: #f2f2f2;
 }
@@ -654,7 +655,7 @@ input[type="email"]::placeholder {
 }
 
 .submit {
-  margin: 0 0 40px 0;
+  margin: 0 0 32px 0;
   background-color: #82b3d3;
 }
 
@@ -687,6 +688,7 @@ input[type="email"]::placeholder {
   color: #333;
   padding: 14px 20px 14px 20px;
   margin: 0 70px 0 0;
+  min-width: 292px;
 }
 
 .view-type-list {
@@ -726,15 +728,38 @@ input[type="email"]::placeholder {
 .hotel-list {
   list-style: none;
   padding: 0;
-  margin: 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 0 20px 0;
+}
+
+.hotel-card {
+  display: grid;
+  grid-template-columns: 140px 140px;
+  column-gap: 20px;
+  row-gap: 16px;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
+  padding: 20px;
+  margin: 0 0 20px 0;
+}
+
+.hotel-card-link {
+  display: block;
+  grid-column: 1 / -1;
+}
+
+.hotel-card-image {
+  display: block;
+  object-fit: contain;
 }
 
 .hotel-card-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  margin: 0;
 }
 
 .hotel-type,
@@ -742,6 +767,15 @@ input[type="email"]::placeholder {
   font-size: 18px;
   line-height: 21px;
   color: #333;
+  margin: 0;
+}
+
+.hotel-price {
+  text-align: right;
+}
+
+.hotel-information {
+  display: inline-block;
 }
 
 .add-to-favorites {
@@ -761,7 +795,8 @@ input[type="email"]::placeholder {
   url(../images/rating-star.svg),
   url(../images/rating-star.svg);
   background-repeat: no-repeat;
-  background-position: 0 0, 24px 0, 48px 0, 72px 0  ;
+  background-position: 0 0, 24px 0, 48px 0, 72px 0;
+  background-position-y: center;
 }
 
 .rating {
@@ -772,21 +807,24 @@ input[type="email"]::placeholder {
 
   background-color: #f2f2f2;
 
-  max-width: 140px;
-
+  margin: 0;
   padding: 9px 22px 8px 23px;
 
   border-radius: 4px;
-
-  display: block;
   box-sizing: border-box;
 }
 
+.devider {
+  height: 1px;
+  background-color: #e6e6e6;
+  margin: 0 0 40px 0;
+}
 
 
 .pagination-list {
   list-style: none;
   padding: 0;
+  margin: 0;
   display: flex;
 }
 
