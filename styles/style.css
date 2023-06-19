@@ -592,8 +592,13 @@ input[type="email"]::placeholder {
 }
 
 
-.hotel-filter-group-price {
+/* .hotel-filter-group-price {
   display: flex;
+} */
+
+.hotel-filter-price-wrapper {
+  display: flex;
+  margin: 0 0 36px 0;
 }
 
 .hotel-filter-group-title {
@@ -646,6 +651,44 @@ input[type="email"]::placeholder {
   padding: 12px 20px 12px 0;
 }
 
+.slider-filter {
+  position: relative;
+  width: 287px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.slider-1,
+.slider-2 {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  position: absolute;
+  color: #000;
+}
+
+.slider-2 {
+  left: 206px;
+}
+
+.slider-line-1 {
+  width: 287px;
+  height: 4px;
+  background-color: #fff;
+  opacity: 0.3;
+  position: absolute;
+}
+
+.slider-line-2 {
+  width: 226px;
+  height: 4px;
+  background-color: #fff;
+  position: absolute;
+}
+
+
 .search-hotel-filter-buttons {
   margin: 56px 0 0 0;
 }
@@ -689,6 +732,9 @@ input[type="email"]::placeholder {
   padding: 14px 20px 14px 20px;
   margin: 0 70px 0 0;
   min-width: 292px;
+  appearance: none;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
 }
 
 .view-type-list {
