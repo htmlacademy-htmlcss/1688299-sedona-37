@@ -591,11 +591,6 @@ input[type="email"]::placeholder {
   margin: 0 70px 0 0;
 }
 
-
-/* .hotel-filter-group-price {
-  display: flex;
-} */
-
 .hotel-filter-price-wrapper {
   display: flex;
   margin: 0 0 36px 0;
@@ -703,7 +698,6 @@ input[type="email"]::placeholder {
 }
 
 .reset {
-  padding: 0;
   margin: 0 auto;
   background-color: transparent;
 }
@@ -735,7 +729,24 @@ input[type="email"]::placeholder {
   appearance: none;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 1;
 }
+
+.select-control-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.select-control-wrapper::after {
+  content: url(../images/sort-arrow.svg);
+  position: absolute;
+  display: flex;
+  right: 90px;
+}
+
 
 .view-type-list {
   list-style: none;
@@ -891,11 +902,13 @@ input[type="email"]::placeholder {
   align-items: center;
   justify-content: center;
 
-  width: 60px;
-  height: 60px;
-  margin-right: 8px;
+  min-width: 60px;
 
   background-color: #82b3d3;
+}
+
+.pagination-item:not(:last-child) {
+  margin: 0 8px 0 0;
 }
 
 .pagination-link {
@@ -903,7 +916,7 @@ input[type="email"]::placeholder {
   align-items: center;
   justify-content: center;
 
-  width: 60px;
+  width: 100%;
   height: 60px;
 
   font-weight: 700;
