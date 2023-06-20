@@ -193,8 +193,8 @@ main {
   height: 20px;
 
   position: absolute;
-  left: 20px;
-  top: 10px;
+  left: 19px;
+  top: 12px;
 
   font-weight: 400;
   font-size: 10px;
@@ -610,10 +610,61 @@ input[type="email"]::placeholder {
   list-style: none;
   padding: 0;
   margin: 0;
+  font-size: 18px;
+  line-height: 23px;
 }
 
 .hotel-filter-item:not(:last-child) {
   margin: 0 0 16px 0;
+}
+
+.control-input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.control-checkbox {
+  display: inline-flex;
+  align-items: center;
+}
+
+.control-checkbox::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  margin-right: 16px;
+}
+
+.control-input:checked+.control-checkbox::before{
+  background-image: url(../images/checkbox-checked.svg);
+  background-repeat: no-repeat;
+  background-position-x: 4px;
+  background-position-y: 5px;
+}
+
+.control-radio {
+  display: inline-flex;
+  align-items: center;
+}
+
+.control-radio::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.control-input:checked+.control-radio::before {
+  background-image: url(../images/radio-checked.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hotel-filter-price {
