@@ -249,10 +249,12 @@ main {
   width: 1200px;
   height: 57px;
   background-image: url(../images/divider.svg);
+  position: absolute;
+  bottom: 0;
 }
 
 .hero-img {
-  padding-top: 51px;
+  padding: 51px 0 82px 0;
   display: inline-block;
   vertical-align: middle;
   margin: 0 auto;
