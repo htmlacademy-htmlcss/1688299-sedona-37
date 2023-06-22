@@ -993,6 +993,11 @@ input[type="email"]::placeholder {
   color: #000;
 }
 
+.pagination-list li:first-child a:hover,
+.pagination-list li:first-child a:focus {
+  background-color: inherit;
+}
+
 .pagination-list li:nth-child(5) {
   background-color: #f2f2f2;
 }
@@ -1025,6 +1030,23 @@ input[type="email"]::placeholder {
   text-transform: uppercase;
   text-decoration: none;
   color: #fff;
+
+  outline: none;
+}
+
+.pagination-link:hover,
+.pagination-link:focus {
+  background-color: #68A2CA;
+}
+
+
+.pagination-button {
+  border: 0;
+  background-color: inherit;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  padding: 0;
 }
 
 /* footer */
