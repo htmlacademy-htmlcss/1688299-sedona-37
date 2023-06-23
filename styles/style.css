@@ -233,7 +233,7 @@ main {
 /* section .welcome */
 
 .welcome {
-  background-color:tomato;
+  background-color:#9098a0;
   background-image: url(../images/index-hero-background.jpg);
   background-repeat: no-repeat;
 
@@ -460,7 +460,7 @@ main {
 }
 
 .mailing-index {
-  background-color: tomato;
+  background-color: #9098a0;
   background-image: url(../images/mailing-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -493,13 +493,13 @@ main {
 
 .mailing-list input[type="email"] {
   display: flex;
-  width: 452px;
-  height: 52px;
+  min-width: 452px;
+  /* height: 52px; */
 
   border-radius: 4px 0 0 4px;
   border: 0;
 
-  padding: 0 20px 0 20px;
+  padding: 12px 20px;
   box-sizing: border-box;
 
   background-color: #f2f2f2;
@@ -536,7 +536,7 @@ input[type="email"]::placeholder {
 
 /* section .search-hotel */
 .search-container {
-  background-color: tomato;
+  background-color: #9098a0;
   background-image: url(../images/search-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -685,7 +685,7 @@ input[type="email"]::placeholder {
 .hotel-filter-price {
   font-size: 18px;
   line-height: 24px;
-  color: #000;
+  /* color: #000; */
   min-width: 143px;
   height: 48px;
   background-color: #f2f2f2;
@@ -693,10 +693,45 @@ input[type="email"]::placeholder {
   justify-content: space-between;
 }
 
-.min-price {
+.input-wrapper-min-price {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+
+.input-wrapper-min-price::after {
+  content: "от";
+  color: #000;
+  position: absolute;
+  font-size: 18px;
+  font-family: PT Sans;
+  line-height: 24px;
+  opacity: 0.3;
+}
+
+.input-wrapper-max-price::after {
+  content: "до";
+  color: #000;
+}
+
+.hotel-filter-min-price {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 0 4px 4px 0;
+  padding: 12px 20px;
+  width: 143px;
+}
+
+/* .min-price {
   border-radius: 4px 0 0 4px;
   margin: 0 2px 0 0;
-}
+} */
 
 .max-price {
   border-radius: 0 4px 4px 0;
