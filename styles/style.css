@@ -466,8 +466,8 @@ main {
   line-height: 36px;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 96px;
-  margin: 0 0 20px 0;
+  padding-top: 95px;
+  margin: 0 0 22px 0;
 }
 
 .mailing-second-p {
@@ -477,8 +477,7 @@ main {
 }
 
 .mailing-list {
-  padding-bottom: 104px;
-
+  padding-bottom: 101px;
   display: flex;
   justify-content: center;
 }
@@ -495,6 +494,9 @@ main {
 }
 
 input[type="email"]::placeholder {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 24px;
   opacity: 0.6;
@@ -583,6 +585,7 @@ input[type="email"]::placeholder {
 
 .hotel-filter-group-wrapper {
   display: flex;
+  column-gap: 70px;
 }
 
 .hotel-filter-group {
@@ -590,11 +593,6 @@ input[type="email"]::placeholder {
   padding: 0;
   border: 0;
 }
-
-.hotel-filter-group:nth-child(odd) {
-  margin: 0 70px 0 0;
-}
-
 
 .hotel-filter-group-title {
   font-weight: 700;
@@ -668,11 +666,6 @@ input[type="email"]::placeholder {
 .control-radio:hover {
   opacity: 0.6;
 }
-
-/* .control-checkbox:focus,
-.control-radio:focus {
-
-} */
 
 .control-checkbox:active,
 .control-radio:active {
@@ -834,7 +827,8 @@ input[type="email"]::placeholder {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin: 0 200px 0 0;
+  margin: 0;
+  flex-grow: 1;
 }
 
 
@@ -845,7 +839,7 @@ input[type="email"]::placeholder {
   font-size: 18px;
   line-height: 21px;
   color: #333;
-  padding: 14px 20px 14px 20px;
+  padding: 12px 20px 12px 18px;
   margin: 0 70px 0 0;
   min-width: 292px;
   appearance: none;
@@ -855,7 +849,6 @@ input[type="email"]::placeholder {
   cursor: pointer;
   outline: none;
   z-index: 1;
-  height: 49px;
 }
 
 .select-control:hover,
@@ -885,14 +878,13 @@ input[type="email"]::placeholder {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  row-gap: 8px;
+  gap: 8px;
 }
 
 
 .view-type-item {
   min-width: 48px;
   min-height: 48px;
-  margin: 0 8px 0 0;
 }
 
 .view-type-item:last-child {
@@ -925,6 +917,9 @@ input[type="email"]::placeholder {
 .sorting-button:active {
   border-color: #000;
 }
+
+
+/* Карточки отелей */
 
 .hotel-list {
   list-style: none;
@@ -1053,10 +1048,13 @@ input[type="email"]::placeholder {
   box-sizing: border-box;
 }
 
+
+/* Линия-разделитель */
+
 .devider {
   height: 1px;
   background-color: #e6e6e6;
-  margin: 0 0 40px 0;
+  margin: 0 0 39px 0;
 }
 
 
@@ -1068,56 +1066,48 @@ input[type="email"]::placeholder {
   padding: 0;
   margin: 0 0 60px 0;
   display: flex;
+  gap: 8px;
   flex-wrap: wrap;
-}
-
-.pagination-list li:first-child {
-  background-color: #f2f2f2;
-}
-
-.pagination-list li:first-child a {
-  color: #000;
-}
-
-.pagination-list li:first-child a:hover,
-.pagination-list li:first-child a:focus {
-  background-color: inherit;
-}
-
-.pagination-list li:nth-child(5) {
-  background-color: #f2f2f2;
 }
 
 .pagination-item {
   display: flex;
-  align-items: center;
-  justify-content: center;
-
   min-width: 60px;
+  min-height: 60px;
 
-  background-color: #82b3d3;
 }
 
-.pagination-item:not(:last-child) {
-  margin: 0 8px 0 0;
+.pagination-list li:first-child a {
+  color: #000;
+  background-color: #f2f2f2;
 }
+
+.pagination-list li:first-child a:hover,
+.pagination-list li:first-child a:focus {
+  background-color: #f2f2f2;
+}
+
+/* .pagination-list li:nth-child(5) {
+  background-color: #f2f2f2;
+} */
+
 
 .pagination-link {
   display: flex;
   align-items: center;
   justify-content: center;
-
   width: 100%;
   height: 60px;
-
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
   text-decoration: none;
   color: #fff;
-
   outline: none;
+
+  background-color: #82b3d3;
+  border-radius: 4px;
 }
 
 .pagination-link:hover,
@@ -1125,16 +1115,33 @@ input[type="email"]::placeholder {
   background-color: #68A2CA;
 }
 
+.pagination-link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
 
 .pagination-button {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
   border: 0;
-  background-color: inherit;
+  background-color: #fff;
   cursor: pointer;
   width: 100%;
-  height: 100%;
   padding: 0;
 }
 
+.pagination-button:hover,
+.pagination-button:focus {
+  background-color: #68A2CA;
+  outline: none;
+  border-radius: 4px;
+}
+
+.pagination-button:active {
+  color: #fff;
+}
 
 /* footer */
 
@@ -1166,25 +1173,26 @@ input[type="email"]::placeholder {
 
 }
 
+.social-list-item {
+  display: flex;
+}
 
 .social-link {
-  padding: 6px 10px;
+  padding: 10px 10px;
 }
 
-.social-list-item img {
-  display: inline-block;
-  vertical-align: middle;
+.social-link:hover svg path,
+.social-link:focus svg path {
+  fill: #68A2CA;
 }
 
+.social-link:active svg path {
+  fill: #68A2CA;
+  opacity: 0.3;
+}
 
 /* Телефон */
 
-.phone {
-  min-width: 720px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .contact-phone {
   font-size: 40px;
@@ -1194,16 +1202,35 @@ input[type="email"]::placeholder {
   color: #000;
 }
 
+.contact-phone:focus {
+  outline: none;
+}
+
+.contact-phone:hover,
+.contact-phone:focus {
+  color: #756157;
+}
+
+.contact-phone:active {
+  opacity: 0.3;
+}
 
 /* Академия */
 
-.academy {
-  min-width: 115px;
+.htmlacademy-link {
   display: flex;
-  align-items: center;
 }
 
-.htmlacademy-link img {
-  display: inline-block;
-  vertical-align: middle;
+.htmlacademy-link:focus {
+  outline: none;
+}
+
+.htmlacademy-link:hover svg path,
+.htmlacademy-link:focus svg path {
+  fill: #756157;
+}
+
+.htmlacademy-link:active svg path {
+  fill: #756157;
+  opacity: 0.3;
 }
