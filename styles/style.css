@@ -264,8 +264,6 @@ main {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  text-align: center;
-
   margin-bottom: 25px;
 }
 
@@ -417,13 +415,13 @@ main {
   margin: 0 auto 30px auto;
 }
 
-/* section .search-hotel */
+/* section .find-hotel */
 
-.search-hotel {
-  margin: 0 0 50px 0;
+.find-hotel {
+  margin: 0 0 96px 0;
 }
 
-.search-hotel-first-p {
+.find-hotel-first-p {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -431,13 +429,13 @@ main {
   margin-bottom: 20px;
 }
 
-.search-hotel-second-p {
+.find-hotel-second-p {
   color: #333;
   text-align: center;
   margin: 0 0 54px 0;
 }
 
-.search-button {
+.find-button {
   max-width: 376px;
   padding: 8px 50px;
   margin: 0 auto;
@@ -477,9 +475,13 @@ main {
 }
 
 .mailing-list {
-  padding-bottom: 101px;
+  padding: 0 0 101px 0;
   display: flex;
   justify-content: center;
+}
+
+.mailing-list-index {
+  padding: 0 0 103px 0;
 }
 
 .mailing-list input[type="email"] {
@@ -519,13 +521,12 @@ input[type="email"]::placeholder {
   background-color: #68A2CA;
 }
 
+
+
 /* main (catalog) */
 
 /* header .main-inner-header */
 
-
-
-/* section .search-hotel */
 .search-container {
   background-color: #9098a0;
   background-image: url(../images/search-background.jpg);
@@ -547,6 +548,9 @@ input[type="email"]::placeholder {
 
   margin: 0 0 8px 0;
 }
+
+
+/* breadcrumbs */
 
 .breadcrumbs {
   list-style: none;
@@ -576,6 +580,10 @@ input[type="email"]::placeholder {
 }
 
 /* section .search-hotel */
+
+.search-hotel {
+  margin: 0 0 50px 0;
+}
 
 .search-hotel-filter {
   display: flex;
