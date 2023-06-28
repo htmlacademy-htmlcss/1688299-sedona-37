@@ -639,7 +639,7 @@ input[type="email"]::placeholder {
   margin-right: 16px;
 }
 
-.control-input:checked+.control-checkbox::before{
+.control-input:checked+.control-checkbox::before {
   background-image: url(../images/checkbox=true.svg);
 }
 
@@ -656,6 +656,7 @@ input[type="email"]::placeholder {
   background-color: #fff;
   border-radius: 50%;
   margin-right: 16px;
+  display: block;
 }
 
 .control-input:checked+.control-radio::before {
@@ -667,9 +668,21 @@ input[type="email"]::placeholder {
   opacity: 0.6;
 }
 
+
 .control-checkbox:active,
 .control-radio:active {
   opacity: 0.3;
+}
+
+
+.control-input:focus+.control-checkbox::before,
+.control-input:focus+.control-radio::before {
+  outline: 3px solid #83B3D3;
+}
+
+.control-input:hover+.control-checkbox::before,
+.control-input:hover+.control-radio::before {
+  outline: none;
 }
 
 
