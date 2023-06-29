@@ -682,7 +682,6 @@ input[type="email"]::placeholder {
   opacity: 0.3;
 }
 
-
 .control-input:focus+.control-checkbox::before,
 .control-input:focus+.control-radio::before {
   outline: 3px solid #83B3D3;
@@ -961,6 +960,7 @@ input[type="email"]::placeholder {
 .hotel-card {
   display: grid;
   grid-template-columns: 140px 140px;
+
   column-gap: 20px;
   row-gap: 16px;
   box-shadow: 0 0 0 1px #E6E6E6;
@@ -1028,6 +1028,8 @@ input[type="email"]::placeholder {
   background-color: #6C9E42;
 }
 
+
+/* звездочки рейтинга */
 .rating-stars {
   display: block;
 }
