@@ -187,5 +187,41 @@
         </section>
       </footer>
     </div>
+    <div class="modal-container">
+      <div class="modal modal-autorization">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+            <fieldset>
+              <legend class="visually-hidden">Параметры поиска гостиниц</legend>
+              <ul class="arrival-departure-list">
+                <li class="arrival-departure-item">
+                  <label for="in">Дата заезда:</label>
+                  <input class="arrival-departure" type="date" id="in">
+                </li>
+                <li class="arrival-departure-item">
+                  <label for="out">Дата выезда:</label>
+                  <input class="arrival-departure" type="date" id="out">
+                </li>
+              </ul>
+              <ul class="hotel-guests-list">
+                <li class="hotel-guests-item">
+                  <label for="">Взрослые:</label>
+                  <input type="number">
+                </li>
+                <li class="hotel-guests-item">
+                  <label for="">Дети:</label>
+                  <input type="number">
+                </li>
+              </ul>
+            </fieldset>
+            <button class="modal-form-button">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
