@@ -718,6 +718,7 @@ input[type="email"]::placeholder {
 
 .min-price::after {
   content: "от";
+  right: 22px;
 }
 
 .max-price::after {
@@ -733,21 +734,21 @@ input[type="email"]::placeholder {
   color: #000;
   background-color: #f2f2f2;
   box-sizing: border-box;
-  border: 0;
+  border: 3px solid #f2f2f2;
   outline: none;
-  padding: 12px 45px 12px 20px;
+  padding: 12px 45px 12px 17px;
   width: 143px;
   height: 48px;
 }
 
 .hotel-filter-price:focus {
   border: 3px solid #83B3D3;
-  /* outline: 3px solid #83B3D3; */
 }
 
 .min {
   border-radius: 4px 0 0 4px;
   margin: 0 2px 0 0;
+
 }
 
 .max {
