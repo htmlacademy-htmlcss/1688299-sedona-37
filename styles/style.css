@@ -755,6 +755,9 @@ input[type="email"]::placeholder {
   border-radius: 0 4px 4px 0;
 }
 
+
+
+/* картинка слайдера */
 .slider-filter {
   position: relative;
   width: 287px;
@@ -792,6 +795,9 @@ input[type="email"]::placeholder {
   position: absolute;
 }
 
+
+
+/* кнопки формы */
 
 .search-hotel-filter-buttons {
   margin: 56px 0 0 0;
