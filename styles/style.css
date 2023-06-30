@@ -751,7 +751,7 @@ input[type="email"]::placeholder {
   outline: none;
   padding: 14px 10px;
   /* Доделать ширину формы */
-  width: 35px;
+  width: 40px;
 
   border-radius: 4px;
   box-sizing: border-box;
