@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="page-container">
-      <header class="main-header">
+      <header class="main-header" data-test="header">
         <a class="main-logo-link" href="index.html">
           <img class="main-logo" src="images/header/logo.svg" width="140" height="70" alt="Логотип Седона.">
         </a>
@@ -46,13 +46,13 @@
         </nav>
       </header>
 
-      <main class="main-index">
+      <main class="main-index" data-test="main">
         <h1 class="visually-hidden">Курорт "Седона"</h1>
-        <section class="welcome">
+        <section class="welcome" data-test="hero">
           <h2 class="visually-hidden">Добро пожаловать</h2>
             <img class="hero-img" src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону.">
         </section>
-        <section class="advantages">
+        <section class="advantages" data-test="advantages">
           <h2 class="visually-hidden">Преимущества</h2>
           <p class="advantages-first-p">Седона — небольшой городок в Аризоне,<br>
             заслуживающий большего!</p>
@@ -97,7 +97,7 @@
             </li>
           </ul>
         </section>
-        <section class="recomendations">
+        <section class="recomendations" data-test="service">
           <h2 class="visually-hidden">Рекомендации</h2>
           <p class="recomendations-first-p">Приезжайте в Седону отдохнуть<br>в комфорте и уюте!</p>
           <p class="recomendations-second-p">Опытный персонал и качественное обслуживание!</p>
@@ -134,13 +134,13 @@
             </li>
           </ul>
         </section>
-        <section class="find-hotel">
+        <section class="find-hotel" data-test="search">
           <h2 class="visually-hidden">Поиск отеля</h2>
           <p class="find-hotel-first-p">Заинтересовались?</p>
           <p class="find-hotel-second-p">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <button class="button find-button">Поиск гостиницы в Седоне</button>
         </section>
-        <section class="mailing mailing-index">
+        <section class="mailing mailing-index" data-test="subscribe">
           <h2 class="visually-hidden">Подписка</h2>
           <p class="mailing-first-p">Подпишитесь на рассылку</p>
           <p class="mailing-second-p">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -151,7 +151,7 @@
         </section>
       </main>
 
-      <footer class="main-footer">
+      <footer class="main-footer" data-test="footer">
         <section class="contacts">
           <h2 class="visually-hidden">Контакты</h2>
           <div class="social">
@@ -187,7 +187,7 @@
         </section>
       </footer>
     </div>
-    <div class="modal-container">
+    <div class="modal-container modal-container-close">
       <div class="modal modal-autorization">
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
@@ -211,9 +211,9 @@
                 <li class="hotel-guests-item">
                   <label for="">Взрослые:</label>
                   <div class="hotel-guests-item-wrapper">
-                    <button class="minus" type="button"></button>
+                    <button class="hotel-guests-item-button minus" type="button"></button>
                     <input class="guests" type="text" value="2">
-                    <button class="plus" type="button"></button>
+                    <button class="hotel-guests-item-button plus" type="button"></button>
                   </div>
                 </li>
                 <li class="hotel-guests-item">
@@ -225,9 +225,9 @@
                     </div>
                   </div>
                   <div class="hotel-guests-item-wrapper">
-                    <button class="minus" type="button"></button>
+                    <button class="hotel-guests-item-button minus" type="button"></button>
                     <input class="guests" type="text" value="2">
-                    <button class="plus" type="button"></button>
+                    <button class="hotel-guests-item-button plus" type="button"></button>
                   </div>
                 </li>
               </ul>
