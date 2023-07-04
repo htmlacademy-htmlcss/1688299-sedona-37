@@ -614,13 +614,13 @@ input[type="email"]::placeholder {
   z-index: 1;
 }
 
-.modal-container-close {
+/* .modal-container-close {
   display: none;
-}
+} */
 
 .modal {
   position: relative;
-  margin: 396px auto auto;
+  /* margin: 396px auto auto; */
   padding: 64px 70px;
   background-color: #fff;
   border-radius: 30px;
@@ -686,11 +686,30 @@ input[type="email"]::placeholder {
   margin: 0;
 }
 
+/* Списки с формами дат заезда-выезда и гостей */
+
 .arrival-departure-list,
 .hotel-guests-list {
   margin: 0;
   list-style: none;
   padding: 0;
+}
+
+.arrival-departure-item {
+  display: grid;
+  grid-template-columns: 1fr 440px;
+  grid-template-rows: 48px 48px;
+}
+
+.arrival-departure-item label {
+  align-self: center;
+}
+
+
+/* поля ввода */
+
+.modal-form-input-label {
+  cursor: pointer;
 }
 
 .arrival-departure {
@@ -713,13 +732,18 @@ input[type="email"]::placeholder {
   border: 3px solid #83B3D3;
 }
 
-.arrival-departure-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 0 48px 0;
+.error-message {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: none;
+  padding: 4px 20px 0;
+  grid-column: -1 / -2;
 }
 
+.error {
+  color: #FF5757;
+}
 
 .hotel-guests-list {
   display: flex;
@@ -735,7 +759,7 @@ input[type="email"]::placeholder {
 
 .hotel-guests-item-wrapper {
   display: grid;
-  width: 110px;
+  /* width: 110px; */
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 48px;
 }
@@ -746,7 +770,6 @@ input[type="email"]::placeholder {
   padding: 14px 10px;
   border: 3px solid #f2f2f2;
   background-color: #f2f2f2;
-  position: relative;
   cursor: pointer;
   outline: none;
 }
@@ -778,9 +801,8 @@ input[type="email"]::placeholder {
   width: 14px;
   height: 2px;
   background-image: url(../images/minus.svg);
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .plus {
@@ -793,9 +815,8 @@ input[type="email"]::placeholder {
   width: 14px;
   height: 14px;
   background-image: url(../images/plus.svg);
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .guests {
@@ -817,6 +838,23 @@ input[type="email"]::placeholder {
   border: 3px solid #f2f2f2;
 }
 
+
+/* tooltip */
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip-toggle {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  padding: 0;
+  border: none;
+  display: flex;
+}
+
+
 /* Иконка info */
 .label-wrapper {
   display: flex;
@@ -832,7 +870,6 @@ input[type="email"]::placeholder {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
 }
 
 .info-icon-top {
@@ -848,23 +885,40 @@ input[type="email"]::placeholder {
   background-color: #fff;
 }
 
-/* Описание в info */
-.info-description {
-  width: 256px;
-  padding: 15px 18px 18px 22px;
-  border-radius: 10px;
-  background-color: #333;
-  position: absolute;
-  bottom: -15px;
-}
+/* Текст в info */
 
-.info-description-text {
+.tooltip-text {
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   color: #fff;
   text-transform: none;
-  margin: 0;
+  background-color: #333;
+  width: 216px;
+  padding: 15px 18px 18px 22px;
+  border-radius: 10px;
+  z-index: 1;
+  position: absolute;
+  margin: 15px 0 0 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+
+.tooltip-text::before {
+  content: "";
+  background-image: url(../images/triangle\ 1.svg);
+  width: 19px;
+  height: 9px;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
 }
 
 .modal-form-button {
