@@ -105,13 +105,13 @@ main {
   min-height: 64px;
   display: flex;
   position: relative;
+  z-index: 1;
 }
 
 .main-logo-link {
   margin: 0;
   position: absolute;
   left: 70px;
-  z-index: 1;
 }
 
 .main-logo {
@@ -614,17 +614,18 @@ input[type="email"]::placeholder {
   z-index: 1;
 }
 
-/* .modal-container-close {
+.modal-container-close {
   display: none;
-} */
+}
 
 .modal {
   position: relative;
-  /* margin: 396px auto auto; */
+  margin: 396px auto auto auto;
   padding: 64px 70px;
   background-color: #fff;
   border-radius: 30px;
   box-sizing: border-box;
+  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
 }
 
 .modal-autorization {
@@ -699,6 +700,7 @@ input[type="email"]::placeholder {
   display: grid;
   grid-template-columns: 1fr 440px;
   grid-template-rows: 48px 48px;
+  position: relative;
 }
 
 .arrival-departure-item label {
@@ -744,6 +746,19 @@ input[type="email"]::placeholder {
 .error {
   color: #FF5757;
 }
+
+.date-button {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/date.svg);
+  position: absolute;
+  right: 20px;
+  top: 14px;
+  border: none;
+  cursor: pointer;
+}
+
 
 .hotel-guests-list {
   display: flex;
