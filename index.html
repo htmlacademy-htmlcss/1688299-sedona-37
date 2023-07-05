@@ -200,13 +200,13 @@
               <ul class="arrival-departure-list">
                 <li class="arrival-departure-item">
                   <label class="modal-form-input-label " for="in">Дата заезда:</label>
-                  <input class="arrival-departure" type="text" id="in" value="27 апреля 2020">
+                  <input class="arrival-departure" type="text" id="in" value="27 апреля 2020" required>
                   <span class="error-message error">Мы не можем отправить вас в прошлое.</span>
                   <button class="date-button" type="button"></button>
                 </li>
                 <li class="arrival-departure-item">
                   <label class="modal-form-input-label" for="out">Дата выезда:</label>
-                  <input class="arrival-departure" type="text" id="out" value="1 сентября 2021">
+                  <input class="arrival-departure" type="text" id="out" value="1 сентября 2021" required>
                   <span class="error-message">На эти даты есть свободные номера. Пока есть.</span>
                   <button class="date-button" type="button"></button>
                 </li>
@@ -216,7 +216,7 @@
                   <label class="modal-form-input-label" for="adult">Взрослые:</label>
                   <div class="hotel-guests-item-wrapper">
                     <button class="hotel-guests-item-button minus" type="button"></button>
-                    <input class="guests" type="text" id="adult" value="2">
+                    <input class="guests" type="text" id="adult" value="2" required>
                     <button class="hotel-guests-item-button plus" type="button"></button>
                   </div>
                 </li>
