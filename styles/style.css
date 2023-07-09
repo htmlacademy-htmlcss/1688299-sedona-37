@@ -467,8 +467,8 @@ body {
   background-image: url(../images/mailing-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-
   color: #fff;
+  margin-bottom: 43px;
 }
 
 .mailing-first-p {
@@ -947,7 +947,7 @@ input[type="email"]::placeholder {
 
 .tooltip-text::before {
   content: "";
-  background-image: url(../images/triangle\ 1.svg);
+  background-image: url(../images/triangle.svg);
   width: 19px;
   height: 9px;
   position: absolute;
@@ -1114,7 +1114,7 @@ input[type="email"]::placeholder {
 }
 
 .control-input:checked+.control-checkbox::before {
-  background-image: url(../images/checkbox=true.svg);
+  background-image: url(../images/checkbox-true.svg);
 }
 
 
@@ -1134,7 +1134,7 @@ input[type="email"]::placeholder {
 }
 
 .control-input:checked+.control-radio::before {
-  background-image: url(../images/radio=true.svg);
+  background-image: url(../images/radio-true.svg);
 }
 
 .control-checkbox:hover,
