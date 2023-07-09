@@ -641,7 +641,7 @@ input[type="email"]::placeholder {
 }
 
 .modal-container-close {
-  /* display: none; */
+  display: none;
 }
 
 .modal {
