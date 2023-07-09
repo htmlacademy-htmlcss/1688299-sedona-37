@@ -641,13 +641,13 @@ input[type="email"]::placeholder {
 }
 
 .modal-container-close {
-  /* display: none; */
+  display: none;
 }
 
 .modal {
   position: relative;
-  /* margin: 396px auto auto auto; */
-  margin: auto auto;
+  margin: 396px auto auto auto;
+  /* margin: auto auto; */
   padding: 64px 70px;
   background-color: #fff;
   border-radius: 30px;
