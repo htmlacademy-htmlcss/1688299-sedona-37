@@ -641,13 +641,13 @@ input[type="email"]::placeholder {
 }
 
 .modal-container-close {
-  display: none;
+  /* display: none; */
 }
 
 .modal {
   position: relative;
-  margin: 396px auto auto auto;
-  /* margin: auto auto; */
+  /* margin: 396px auto auto auto; */
+  margin: auto auto;
   padding: 64px 70px;
   background-color: #fff;
   border-radius: 30px;
@@ -911,38 +911,17 @@ input[type="email"]::placeholder {
   border-radius: 50%;
   padding: 0;
   border: none;
-  display: flex;
+  display: block;
+  cursor: pointer;
+  background-color: #83B3D3;
+  background-image: url(../images/info-icon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-
-/* Иконка info */
 .label-wrapper {
   display: flex;
   column-gap: 12px;
-}
-
-.info {
-  width: 26px;
-  height: 26px;
-  background-color: #83B3D3;
-  border-radius: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.info-icon-top {
-  height: 2px;
-  width: 2px;
-  background-color: #fff;
-  margin: 0 0 1px 0;
-}
-
-.info-icon-bottom {
-  width: 2px;
-  height: 9px;
-  background-color: #fff;
 }
 
 /* Текст в info */
