@@ -389,8 +389,34 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-
   margin: 0 auto 30px auto;
+}
+
+.recomendations-list-item-header-house::before {
+  content: "";
+  background-image: url(../images/house.svg);
+  display: block;
+  width: 75px;
+  height: 72px;
+  margin: 0 auto 30px auto;
+}
+
+.recomendations-list-item-header-food::before {
+  content: "";
+  background-image: url(../images/food.svg);
+  display: block;
+  width: 75px;
+  height: 72px;
+  margin: 0 auto 30px auto;
+}
+
+.recomendations-list-item-header-gift::before {
+  content: "";
+  background-image: url(../images/gift.svg);
+  display: block;
+  width: 75px;
+  height: 76px;
+  margin: 0 auto 26px auto;
 }
 
 .recomendations-list-item p {
@@ -615,12 +641,13 @@ input[type="email"]::placeholder {
 }
 
 .modal-container-close {
-  display: none;
+  /* display: none; */
 }
 
 .modal {
   position: relative;
-  margin: 396px auto auto auto;
+  /* margin: 396px auto auto auto; */
+  margin: auto auto;
   padding: 64px 70px;
   background-color: #fff;
   border-radius: 30px;
@@ -724,7 +751,7 @@ input[type="email"]::placeholder {
   color: #000;
   background-color: #f2f2f2;
   outline: none;
-  padding: 12px 20px;
+  padding: 12px 20px 10px 17px;
   width: 440px;
   border-radius: 4px;
   box-sizing: border-box;
@@ -775,8 +802,8 @@ input[type="email"]::placeholder {
 
 .hotel-guests-item-wrapper {
   display: grid;
-  /* width: 110px; */
-  grid-template-columns: repeat(3, 1fr);
+  width: 110px;
+  grid-template-columns: 40px 1fr 40px;
   grid-template-rows: 48px;
 }
 
@@ -845,10 +872,7 @@ input[type="email"]::placeholder {
   text-align: center;
   background-color: #f2f2f2;
   outline: none;
-  padding: 14px 10px;
-  /* Доделать ширину формы */
-  width: 40px;
-
+  width: 100%;
   border-radius: 4px;
   box-sizing: border-box;
   border: 3px solid #f2f2f2;
@@ -874,7 +898,7 @@ input[type="email"]::placeholder {
 /* Иконка info */
 .label-wrapper {
   display: flex;
-  column-gap: 10px;
+  column-gap: 12px;
 }
 
 .info {
