@@ -646,8 +646,8 @@ input[type="email"]::placeholder {
 
 .modal {
   position: relative;
-  /* margin: 396px auto auto auto; */
-  margin: auto auto;
+  margin: 396px auto auto auto;
+  /* margin: auto auto; */
   padding: 64px 70px;
   background-color: #fff;
   border-radius: 30px;
@@ -817,23 +817,6 @@ input[type="email"]::placeholder {
   outline: none;
 }
 
-
-.hotel-guests-item-button:hover {
-  background-color: #E6E6E6;
-  border-color: #E6E6E6;
-}
-
-.hotel-guests-item-button:focus {
-  border: 3px solid #83B3D3;
-  outline: none;
-  background-color: #e6e6e6;
-}
-
-.hotel-guests-item-button:active {
-  border: 3px solid #fff;
-  opacity: 0.3;
-}
-
 .minus {
   border-radius: 4px 0 0 4px;
 }
@@ -843,6 +826,24 @@ input[type="email"]::placeholder {
   display: block;
   width: 14px;
   height: 2px;
+  background-image: url(../images/minus.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.minus:hover {
+  background-image: url(../images/minus-hover.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.minus:focus {
+  background-image: url(../images/minus-focus.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.minus:active {
   background-image: url(../images/minus.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -861,6 +862,25 @@ input[type="email"]::placeholder {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.plus:hover {
+  background-image: url(../images/plus-hover.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.plus:focus {
+  background-image: url(../images/plus-focus.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.plus:active {
+  background-image: url(../images/plus.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 
 .guests {
   font-family: "PT Sans", sans-serif;
