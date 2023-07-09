@@ -289,21 +289,25 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-
   max-width: 175px;
-  margin: 0 auto 30px auto;
+  margin: 0 auto;
 }
 
-.line {
+
+.line-after::after {
+  content: "";
+  display: block;
   width: 60px;
   height: 2px;
-  background-color: rgba(0, 0, 0, 0.3);
-  margin: 0 auto 30px auto;
+  margin: 30px auto 30px auto;
 }
 
-.advantages-list li:first-child .line,
-.advantages-list li:last-child .line {
-  background-color: rgba(255, 255, 255, 0.3);
+.white::after {
+  background-image: url(../images/line-white.svg);
+}
+
+.black::after {
+  background-image: url(../images/line-black.svg);
 }
 
 .advantages-list-item-text {
@@ -316,10 +320,6 @@ body {
 
 .white-text {
   color: #fff;
-}
-
-.advantages-list-item-img {
-  text-align: right;
 }
 
 .advantages-list li:nth-child(even) {
