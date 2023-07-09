@@ -1107,7 +1107,7 @@ input[type="email"]::placeholder {
 .control-checkbox::before {
   content: "";
   width: 20px;
-  height: 19px;
+  height: 20px;
   background-color: #fff;
   border-radius: 4px;
   margin-right: 16px;
@@ -1242,7 +1242,7 @@ input[type="email"]::placeholder {
 }
 
 .slider-2 {
-  left: 206px;
+  left: 207px;
 }
 
 .slider-line-1 {
