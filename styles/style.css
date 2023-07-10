@@ -224,10 +224,6 @@ body {
   background-color:#9098a0;
   background-image: url(../images/index-hero-background.jpg);
   background-repeat: no-repeat;
-
-
-  margin-bottom: 69px;
-
   position: relative;
 }
 
@@ -259,7 +255,8 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin-bottom: 25px;
+  padding: 68px 50px 0 50px;
+  margin: 0 0 26px 0;
 }
 
 .advantages-second-p {
@@ -267,8 +264,8 @@ body {
   line-height: 26px;
   text-align: center;
   color: #333;
-
-  margin-bottom: 90px;
+  padding: 0 50px 69px 50px;
+  margin: 0 0 21px 0;
 }
 
 .advantages-list {
