@@ -1602,9 +1602,9 @@ input[type="email"]::placeholder {
   text-decoration: none;
   color: #fff;
   outline: none;
-
   background-color: #82b3d3;
   border-radius: 4px;
+  padding: 0 15px;
 }
 
 .pagination-link:hover,
