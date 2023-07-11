@@ -368,7 +368,7 @@ body {
 }
 
 .recomendations-second-p {
-  color: #333;
+  color: #333333;
   margin: 0 0 64px 0;
 }
 
@@ -436,7 +436,7 @@ body {
 .recomendations-list-item p {
   font-size: 18px;
   line-height: 21px;
-  color: #333;
+  color: #333333;
   width: 230px;
   margin: 0 auto 30px auto;
 }
@@ -580,11 +580,11 @@ input[type="email"]::placeholder {
 
 .social-link:hover path,
 .social-link:focus path {
-  fill: #68A2CA;
+  fill: #68a2ca;
 }
 
 .social-link:active path {
-  fill: #68A2CA;
+  fill: #68a2ca;
   opacity: 0.3;
 }
 
