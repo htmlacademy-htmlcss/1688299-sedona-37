@@ -45,6 +45,7 @@ body {
 
 .main {
   flex-grow: 1;
+  word-break: break-word;
 }
 
 .visually-hidden {
@@ -288,6 +289,7 @@ body {
 .advantages-list-item-wrapper {
   width: 230px;
   padding: 103px 85px;
+  word-break: break-word;
 }
 
 .advantages-list-item h3 {
@@ -295,7 +297,7 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-  max-width: 175px;
+  width: 175px;
   margin: 0 auto;
 }
 
@@ -568,7 +570,7 @@ input[type="email"]::placeholder {
   margin: 0;
   display: flex;
   justify-content: space-between;
-
+  flex-wrap: wrap;
 }
 
 .social-list-item {
@@ -591,6 +593,10 @@ input[type="email"]::placeholder {
 
 /* Телефон */
 
+.phone {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .contact-phone {
   font-size: 40px;
@@ -614,6 +620,12 @@ input[type="email"]::placeholder {
 }
 
 /* Академия */
+
+.academy {
+  display: flex;
+  flex-wrap: wrap;
+  width: 115px;
+}
 
 .htmlacademy-link {
   display: flex;
