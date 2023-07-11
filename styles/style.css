@@ -37,7 +37,7 @@ body {
 .page-container {
   width: 1200px;
   margin: 0 auto;
-  background-color: #fff;
+  background-color: #ffffff;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
@@ -73,7 +73,7 @@ body {
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
   background-color: #756157;
   display: block;
   box-sizing: border-box;
@@ -93,7 +93,7 @@ body {
 }
 
 .button:disabled {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
 /* Header */
@@ -144,7 +144,7 @@ body {
 }
 
 .navigation-link {
-  color: #000;
+  color: #000000;
   text-decoration: none;
   padding: 20px 0 18px 0;
   box-sizing: border-box;
@@ -194,7 +194,7 @@ body {
   font-weight: 400;
   font-size: 10px;
   line-height: 10px;
-  color: #fff;
+  color: #ffffff;
   background-color: #7db54f;
   border-radius: 10px;
 }
@@ -205,7 +205,7 @@ body {
 }
 
 .navigation-user-button {
-  color: #fff;
+  color: #ffffff;
   padding: 8px 34px;
   min-width: 160px;
   flex-shrink: 0;
@@ -264,7 +264,7 @@ body {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  color: #333;
+  color: #333333;
   padding: 0 0 69px 0;
   margin: 0 auto 21px auto;
 }
@@ -319,13 +319,13 @@ body {
 .advantages-list-item-text {
   font-size: 18px;
   line-height: 21px;
-  color: #333;
+  color: #333333;
   width: 232px;
   margin: 0 auto;
 }
 
 .white-text {
-  color: #fff;
+  color: #ffffff;
 }
 
 .advantages-list-item-img {
@@ -454,7 +454,7 @@ body {
 }
 
 .find-hotel-second-p {
-  color: #333;
+  color: #333333;
   text-align: center;
   margin: 0 0 54px 0;
 }
@@ -479,7 +479,7 @@ body {
   background-image: url(../images/mailing-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  color: #fff;
+  color: #ffffff;
   margin-bottom: 42px;
 }
 
@@ -538,7 +538,7 @@ input[type="email"]::placeholder {
 
 .mailing-button:hover,
 .mailing-button:focus {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 /* footer */
@@ -597,7 +597,7 @@ input[type="email"]::placeholder {
   line-height: 40px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #000;
+  color: #000000;
 }
 
 .contact-phone:focus {
@@ -656,7 +656,7 @@ input[type="email"]::placeholder {
   margin: 396px auto auto auto;
   /* margin: auto auto; */
   padding: 64px 70px;
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 30px;
   box-sizing: border-box;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
@@ -683,17 +683,17 @@ input[type="email"]::placeholder {
 }
 
 .modal-close-button:hover {
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
 }
 
 .modal-close-button:focus {
-  border: 3px solid #83B3D3;
+  border: 3px solid #83b3d3;
   outline: none;
   background-color: #e6e6e6;
 }
 
 .modal-close-button:active {
-  border: 3px solid #fff;
+  border: 3px solid #ffffff;
   opacity: 0.3;
 }
 
@@ -766,7 +766,7 @@ input[type="email"]::placeholder {
 }
 
 .modal-form input:focus {
-  border: 3px solid #83B3D3;
+  border: 3px solid #83b3d3;
 }
 
 .error-message {
@@ -779,7 +779,7 @@ input[type="email"]::placeholder {
 }
 
 .error {
-  color: #FF5757;
+  color: #ff5757;
 }
 
 .date-button {
@@ -895,7 +895,7 @@ input[type="email"]::placeholder {
   line-height: 20px;
   font-style: normal;
   font-weight: 700;
-  color: #000;
+  color: #000000;
   text-align: center;
   background-color: #f2f2f2;
   outline: none;
@@ -920,7 +920,7 @@ input[type="email"]::placeholder {
   border: none;
   display: block;
   cursor: pointer;
-  background-color: #83B3D3;
+  background-color: #83b3d3;
   background-image: url(../images/info-icon.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -937,9 +937,9 @@ input[type="email"]::placeholder {
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  color: #fff;
+  color: #ffffff;
   text-transform: none;
-  background-color: #333;
+  background-color: #333333;
   width: 216px;
   padding: 15px 18px 18px 22px;
   border-radius: 10px;
@@ -975,8 +975,8 @@ input[type="email"]::placeholder {
   font-weight: 700;
   line-height: 24px;
   text-transform: uppercase;
-  color: #fff;
-  background-color: #83B3D3;
+  color: #ffffff;
+  background-color: #83b3d3;
   padding: 18px;
   width: 100%;
   border: none;
@@ -987,7 +987,7 @@ input[type="email"]::placeholder {
 
 .modal-form-button:hover,
 .modal-form-button:focus {
-  background-color: #68A2CA
+  background-color: #68a2ca
 }
 
 
@@ -1004,7 +1004,7 @@ input[type="email"]::placeholder {
   background-image: url(../images/search-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  color: #fff;
+  color: #ffffff;
   padding: 35px 0 0 0;
 }
 
@@ -1114,7 +1114,7 @@ input[type="email"]::placeholder {
   content: "";
   width: 20px;
   height: 20px;
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 4px;
   margin-right: 16px;
 }
@@ -1133,7 +1133,7 @@ input[type="email"]::placeholder {
   content: "";
   width: 20px;
   height: 20px;
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 50%;
   margin-right: 16px;
   display: block;
@@ -1156,7 +1156,7 @@ input[type="email"]::placeholder {
 
 .control-input:focus+.control-checkbox::before,
 .control-input:focus+.control-radio::before {
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
 }
 
 .control-input:hover+.control-checkbox::before,
@@ -1179,7 +1179,7 @@ input[type="email"]::placeholder {
 }
 
 .input-wrapper::after {
-  color: #000;
+  color: #000000;
   position: absolute;
   font-size: 18px;
   line-height: 24px;
@@ -1202,7 +1202,7 @@ input[type="email"]::placeholder {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  color: #000;
+  color: #000000;
   background-color: #f2f2f2;
   box-sizing: border-box;
   border: 3px solid #f2f2f2;
@@ -1213,7 +1213,7 @@ input[type="email"]::placeholder {
 }
 
 .hotel-filter-price:focus {
-  border: 3px solid #83B3D3;
+  border: 3px solid #83b3d3;
 }
 
 .min {
@@ -1242,9 +1242,9 @@ input[type="email"]::placeholder {
   width: 20px;
   height: 20px;
   border-radius: 5px;
-  background-color: #fff;
+  background-color: #ffffff;
   position: absolute;
-  color: #000;
+  color: #000000;
 }
 
 .slider-2 {
@@ -1254,7 +1254,7 @@ input[type="email"]::placeholder {
 .slider-line-1 {
   width: 287px;
   height: 4px;
-  background-color: #fff;
+  background-color: #ffffff;
   opacity: 0.3;
   position: absolute;
 }
@@ -1262,7 +1262,7 @@ input[type="email"]::placeholder {
 .slider-line-2 {
   width: 226px;
   height: 4px;
-  background-color: #fff;
+  background-color: #ffffff;
   position: absolute;
 }
 
@@ -1305,7 +1305,7 @@ input[type="email"]::placeholder {
 
 .reset:focus {
   border-radius: 4px;
-  border: 3px solid #83B3D3;
+  border: 3px solid #83b3d3;
   background-color: transparent;
 }
 
@@ -1337,7 +1337,7 @@ input[type="email"]::placeholder {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  color: #333;
+  color: #333333;
   padding: 12px 20px 12px 18px;
   margin: 0 70px 0 0;
   min-width: 292px;
@@ -1352,7 +1352,7 @@ input[type="email"]::placeholder {
 
 .select-control:hover,
 .select-control:focus {
-  border-color: #68A2CA;
+  border-color: #68a2ca;
 }
 
 .select-control-wrapper {
@@ -1402,19 +1402,19 @@ input[type="email"]::placeholder {
 }
 
 .active-view {
-  border-color: #000;
+  border-color: #000000;
 }
 
 .sorting-button:hover {
-  border-color: #000;
+  border-color: #000000;
 }
 
 .sorting-button:focus {
-  border-color: #68A2CA;
+  border-color: #68a2ca;
 }
 
 .sorting-button:active {
-  border-color: #000;
+  border-color: #000000;
 }
 
 
@@ -1449,7 +1449,7 @@ input[type="email"]::placeholder {
 
 .hotel-card-link:hover,
 .hotel-card-link:focus {
-  outline: 2px solid #68A2CA;
+  outline: 2px solid #68a2ca;
 }
 
 .hotel-card-image {
@@ -1468,7 +1468,7 @@ input[type="email"]::placeholder {
 .hotel-price {
   font-size: 18px;
   line-height: 21px;
-  color: #333;
+  color: #333333;
   margin: 0;
 }
 
@@ -1487,7 +1487,7 @@ input[type="email"]::placeholder {
 
 .add-to-favorites:hover,
 .add-to-favorites:focus {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .added-to-favorites {
@@ -1497,7 +1497,7 @@ input[type="email"]::placeholder {
 
 .added-to-favorites:hover,
 .added-to-favorites:focus {
-  background-color: #6C9E42;
+  background-color: #6c9e42;
 }
 
 
@@ -1538,7 +1538,7 @@ input[type="email"]::placeholder {
 .rating {
   font-size: 16px;
   line-height: 20px;
-  color: #333;
+  color: #333333;
   text-transform: uppercase;
 
   background-color: #f2f2f2;
@@ -1580,7 +1580,7 @@ input[type="email"]::placeholder {
 }
 
 .pagination-item:first-child a {
-  color: #000;
+  color: #000000;
   background-color: #f2f2f2;
 }
 
@@ -1600,7 +1600,7 @@ input[type="email"]::placeholder {
   line-height: 36px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
   outline: none;
   background-color: #82b3d3;
   border-radius: 4px;
@@ -1609,7 +1609,7 @@ input[type="email"]::placeholder {
 
 .pagination-link:hover,
 .pagination-link:focus {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .pagination-link:active {
@@ -1623,7 +1623,7 @@ input[type="email"]::placeholder {
   font-size: 22px;
   line-height: 26px;
   border: 0;
-  background-color: #fff;
+  background-color: #ffffff;
   cursor: pointer;
   width: 100%;
   padding: 0;
@@ -1631,11 +1631,11 @@ input[type="email"]::placeholder {
 
 .pagination-button:hover,
 .pagination-button:focus {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
   outline: none;
   border-radius: 4px;
 }
 
 .pagination-button:active {
-  color: #fff;
+  color: #ffffff;
 }
