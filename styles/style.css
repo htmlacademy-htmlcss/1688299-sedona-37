@@ -560,21 +560,18 @@ input[type="email"]::placeholder {
 
 /* Соцсети */
 
-.social {
-  width: 142px;
-}
-
 .social-list {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  width: 142px;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .social-list-item {
   display: flex;
+  justify-content: center;
 }
 
 .social-link {
@@ -596,6 +593,7 @@ input[type="email"]::placeholder {
 .phone {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .contact-phone {
